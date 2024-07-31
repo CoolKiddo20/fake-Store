@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Store Products</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .product {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: scale(1.02);
+    }
+    .product img {
+      max-width: 100%;
+      border-bottom: 1px solid #eee;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .product-info h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+    .product-info p {
+      margin: 0 0 10px;
+      color: #555;
+    }
+    .product-info .price {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fake Store Products</h1>
+  <div id="product-list"></div>
+  <script src="script.js"></script>
+</body>
+</html>
